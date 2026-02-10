@@ -1,81 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Will You Be My Valentine?</title>
-<style>
-body {
-text-align: center;
-font-family: 'Arial', sans-serif;
-background-color: #ffeef2;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-margin: 0;
-overflow: hidden;
-}
-.container {
-background: white;
-padding: 50px;
-border-radius: 20px;
-box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-h1 { color: #ff4d6d; }
-.buttons { margin-top: 30px; position: relative; height: 60px; }
-button {
-padding: 15px 30px;
-font-size: 20px;
-border-radius: 10px;
-cursor: pointer;
-border: none;
-transition: transform 0.2s;
-}
-#yesBtn { background-color: #ff4d6d; color: white; position: relative; z-index: 10; }
-#noBtn { background-color: #ddd; color: #555; position: absolute; }
-.celebration { display: none; }
-img { max-width: 250px; border-radius: 10px; margin-bottom: 20px; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Proposal</title>
 </head>
 <body>
-
-<div class="container" id="proposal-box">
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHpndW93ZndueGZ3eXJ3eXJ3eXJ3eXJ3eXJ3eXJ3eXJ3eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/cLS1cfxvGOPVpf9g3y/giphy.gif" alt="Cute Cat">
-<h1>Ochanya Mary, will you be my Valentine? 💖</h1>
-<div class="buttons">
-<button id="yesBtn" onclick="showCelebration()">Dey With Me!</button>
-<button id="noBtn" onmouseover="moveButton()">No</button>
-</div>
-<p id="hint" style="font-size: 12px; color: #999; margin-top: 20px;">Dem no burn you well to say no to me my sweetheart 💕</p>
-</div>
-
-<div class="container celebration" id="celebration-box">
-<h1>YAY! 🎉</h1>
-<video style="max-width: 250px; border-radius: 10px; margin-bottom: 20px;" autoplay controls>
-<source src="may.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-<p>I knew you'd say yes! See you then! ❤️</p>
-</div>
-
-<script>
-// Function to make the No button run away
-function moveButton() {
-const noBtn = document.getElementById('noBtn');
-// Calculate random positions within the screen bounds
-const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
-const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
-
-noBtn.style.left = x + 'px';
-noBtn.style.top = y + 'px';
-}
-
-// Function to switch screens
-function showCelebration() {
-document.getElementById('proposal-box').style.display = 'none';
-document.getElementById('celebration-box').style.display = 'block';
-}
-</script>
+    <h1>Will You Be My Valentine?</h1>
+    <p>This year, I want to express my love and appreciation for you in a special way. Join me in celebrating our journey together.</p>
+    <p>Let's create beautiful memories this Valentine's Day!</p>
+    <footer>
+        <p>With love, [Your Name]</p>
+    </footer>
 </body>
 </html>
